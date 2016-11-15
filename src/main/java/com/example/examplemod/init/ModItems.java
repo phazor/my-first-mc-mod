@@ -1,7 +1,7 @@
 package com.example.examplemod.init;
 
 import com.example.examplemod.Reference;
-import com.example.examplemod.items.FirstItem;
+import com.example.examplemod.items.ItemCracker;
 import com.example.examplemod.items.ItemCheese;
 
 import net.minecraft.client.Minecraft;
@@ -11,20 +11,22 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
-//    public static FirstItem firstItem;
     public static ItemCheese cheese;
+    public static ItemCracker cracker;
 
     public static void init() {
     	cheese = new ItemCheese();
-//        firstItem = new FirstItem();
+    	cracker = new ItemCracker();
     }
     
     public static void register() {
     	GameRegistry.register(cheese);
+    	GameRegistry.register(cracker);
     }
     
     public static void registerRenders() {
     	registerRender(cheese);
+    	registerRender(cracker);
     }
     
     private static void registerRender(Item item) {

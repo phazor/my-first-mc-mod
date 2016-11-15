@@ -3,7 +3,8 @@ package com.example.examplemod;
 public class Reference {
 
 	public static enum TutorialItems {
-		CHEESE("cheese", "ItemCheese");
+		CHEESE("cheese", "ItemCheese"),
+		CRACKER("cracker", "ItemCracker");
 		
 		private String unlocalisedName;
 		private String registryName;
