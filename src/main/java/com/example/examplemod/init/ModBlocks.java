@@ -4,10 +4,10 @@ import com.example.examplemod.blocks.FirstBlock;
 
 public class ModBlocks {
 
-    public static FirstBlock firstBlock;
+//    public static FirstBlock firstBlock;
 
     public static void init() {
-        firstBlock = new FirstBlock();
+//        firstBlock = new FirstBlock();
     }
     
     public static void register() {

@@ -11,12 +11,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
-    public static FirstItem firstItem;
+//    public static FirstItem firstItem;
     public static ItemCheese cheese;
 
     public static void init() {
     	cheese = new ItemCheese();
-        firstItem = new FirstItem();
+//        firstItem = new FirstItem();
     }
     
     public static void register() {
@@ -31,6 +31,6 @@ public class ModItems {
     	Minecraft.getMinecraft()
     		.getRenderItem()
     		.getItemModelMesher()
-    		.register(item, 0, new ModelResourceLocation(Reference.MODID + ":" +item.getUnlocalizedName().substring(5), "inventory"));
+    		.register(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
     }
 }
