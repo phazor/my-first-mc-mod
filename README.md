@@ -16,4 +16,4 @@ until we have a real contributing.md....
 
  - http://mcforge.readthedocs.io/en/latest/gettingstarted/
  - http://modwiki.temporal-reality.com/mw/index.php/Main_Page
- - 
+ - https://github.com/TheGreyGhost/MinecraftByExample
