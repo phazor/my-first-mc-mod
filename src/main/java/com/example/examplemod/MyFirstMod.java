@@ -46,6 +46,9 @@ public class MyFirstMod {
             // Initialization of blocks and items typically goes here:
 			 ModItems.init();
 			 ModItems.register();
+			 
+			 ModBlocks.init();
+			 ModBlocks.register();
         }
 
         public void init(FMLInitializationEvent e) {
@@ -68,6 +71,7 @@ public class MyFirstMod {
         public void init(FMLInitializationEvent e) {
         	super.init(e);
             ModItems.registerRenders();
+            ModBlocks.registerRenders();
         }
     }
 
